@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>favoriteSongs</title>
+    <link rel="stylesheet" href="assets/styles/index.css" />
+    <script src="assets/scripts/vendor.js" defer></script>
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <div class="body__backdrop" id="backdrop"></div>
+    <div class="container">
+      <header class="nav">
+        <h1 class="nav__title">Favorite Songs</h1>
+        <button class="nav__button">add a song</button>
+      </header>
+
+      <main class="main">
+        <div class="main--text">
+          <p>Your favorite songs database!</p>
+        </div>
+        <!-- <div class="main--list">
+            <div class="main--list__image">
+              <img src="assets/images/sauti.jpeg" alt="" />
+            </div>
+            <div class="main--list__info">
+              <h5 class="info__title">live and die in africa</h5>
+              <p class="info__artist">sauti sol</p>
+              <p class="info__genre">kenya classic songs</p>
+              <p class="info__rating">4.5/5 stars</p>
+            </div>
+          </div> -->
+      </main>
+    </div>
+    <section class="modal__container" id="modal__addsong">
+      <div class="modal">
+        <p class="modal--header">Add your favorite song here</p>
+        <div class="modal--body">
+          <label for="name">The name of the song</label>
+          <input type="text" id="name" />
+          <label for="artist">Artist</label>
+          <input type="text" id="artist" />
+          <label for="imgurl">image url</label>
+          <input type="url" id="imgurl" />
+          <label for="genre">The genre</label>
+          <input type="text" id="genre" />
+          <label for="rating">What is your rating</label>
+          <input type="number" id="rating" />
+        </div>
+        <div class="modals--footer">
+          <button class="btn--secondary">cancel</button>
+          <button class="btn--primary">add</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

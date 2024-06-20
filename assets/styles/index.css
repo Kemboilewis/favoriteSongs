@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.body__backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(78, 76, 76, 0.8);
+  display: block;
+  z-index: 1;
+  display: none;
+}
+.container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.visible {
+  display: block;
+}
+.nav {
+  top: 0;
+  background: rgba(0, 0, 255, 0.538);
+  color: #fff;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 0;
+}
+.nav__title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.nav__button {
+  border: none;
+  padding: 5px 0;
+  border-radius: 10px;
+  width: 20%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  background: #fff;
+  cursor: pointer;
+}
+.modal__container {
+  z-index: 100;
+  position: relative;
+  top: 120px;
+  background: #fff;
+  width: 40%;
+  margin: auto;
+
+  border-radius: 50px;
+  display: none;
+}
+.modal__container--visible {
+  display: block;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 20px;
+}
+.modal--header {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.modal--body {
+  display: flex;
+  flex-direction: column;
+}
+.modal--body label {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.modal--body input {
+  border: none;
+  outline: none;
+  line-height: 2rem;
+  font-size: 16px;
+  background-color: gainsboro;
+  border-radius: 10px;
+  padding-left: 5px;
+  font-weight: 400;
+}
+.modal--body input:hover {
+  border: none;
+  outline: none;
+}
+.modals--footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.modals--footer .btn--secondary {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: gainsboro;
+  cursor: pointer;
+  font-weight: 500;
+}
+.modals--footer .btn--primary {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(0, 0, 255, 0.538);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+.main {
+  width: 70%;
+  margin: auto;
+}
+.main--text {
+  padding: 5%;
+  text-align: center;
+}
+.main--text p {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main--list {
+  width: 70%;
+  display: flex;
+  /* border: 1px solid red; */
+  margin: auto;
+  height: 150px;
+  border-radius: 20px;
+  background-color: antiquewhite;
+  margin-top: 15px;
+}
+.main--list__image {
+  width: auto;
+  height: 100%;
+}
+.main--list__image img {
+  width: auto;
+  height: 100%;
+  border-radius: 20px;
+}
+.main--list__info {
+  padding: 15px 0 0 15px;
+}
+.info__title {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  line-height: 2rem;
+}
+.info__artist,
+.info__genre {
+  text-transform: lowercase;
+  line-height: 2rem;
+}
+.info__rating {
+  background: rgba(0, 0, 255, 0.538);
+  color: #fff;
+  border-radius: 5px;
+  width: 40%;
+  padding: 3px;
+}
